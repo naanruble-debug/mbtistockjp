@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 
 const S = `
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
@@ -904,7 +904,5 @@ export default function App() {
   return null;
 }
 
-function useEffect(fn: () => (() => void) | void, deps: any[]) {
-  const { useEffect: ue } = require('react');
-  return ue(fn, deps);
+
 }
