@@ -507,6 +507,18 @@ export default function App() {
         <div style={{margin:'0 20px 8px',padding:'12px 14px',background:'var(--bg)',borderRadius:'10px',fontSize:'10px',color:'var(--t3)',lineHeight:1.6,textAlign:'center'}}>
           ⚠️ 本コンテンツは教育・エンターテインメント目的です。投資の最終決定はご自身の判断と責任で行ってください。
         </div>
+        <div style={{margin:'0 20px 16px',background:'var(--white)',borderRadius:'var(--r)',padding:'18px',boxShadow:'var(--sh-sm)'}}>
+          <div style={{fontSize:'12px',fontWeight:700,color:'var(--t3)',letterSpacing:'.5px',marginBottom:'12px'}}>🛒 あなたのタイプにおすすめ</div>
+          <a href="https://amzn.to/4bpYfqZ" target="_blank" rel="noopener noreferrer" style={{display:'flex',alignItems:'center',gap:'14px',padding:'14px',background:'var(--bg)',borderRadius:'12px',textDecoration:'none',marginBottom:'10px'}}>
+            <div style={{fontSize:'32px',flexShrink:0}}>📚</div>
+            <div>
+              <div style={{fontSize:'13px',fontWeight:700,color:'var(--t1)',marginBottom:'3px'}}>投資の名著・おすすめ本</div>
+              <div style={{fontSize:'12px',color:'var(--t3)',marginBottom:'6px'}}>あなたの投資タイプに合った一冊</div>
+              <div style={{display:'inline-block',background:'#FF9900',color:'#fff',fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'6px'}}>Amazonで見る →</div>
+            </div>
+          </a>
+          <div style={{fontSize:'10px',color:'var(--t4)',textAlign:'center'}}>※ Amazonアソシエイトリンクを含みます</div>
+        </div>
         <button className="retry-btn" onClick={retry}>↺ もう一度テストする</button>
         <div className={`toast${toastOn?' on':''}`}>{toast}</div>
       </div>
